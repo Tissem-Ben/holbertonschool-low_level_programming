@@ -2,6 +2,7 @@
 #include <stdio.h>
 /**
  * void print-line - check the code
+ * @n: variabl to be verified
  *
  * Return: Always 0.
  */
