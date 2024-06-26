@@ -1,17 +1,19 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * _strlen - swaps the values of two integers
+ * _strlen - Calculates the length of a string.
  *
- * @s: Pointer to the first integer
+ * @s: the pointer to the null-terminates string.
+ * Return: The length of the string (excluding the null terminator).
  */
 int _strlen(char *s)
 {
-	        int len = 0;
-		while (s[len] != '\0')
-		{
-			len++;
-		}
-		return len;
+	int len = 0;
+
+	while (*s)
+	{
+		len++;
+		s++;
+	}
+	return (len);
 }
