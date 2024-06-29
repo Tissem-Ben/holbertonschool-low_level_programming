@@ -9,6 +9,7 @@
 int _strlen(char *s)
 {
 	int len = 0;
+
 	while (s[len] != '\0')
 	{
 		len++;
@@ -17,13 +18,14 @@ int _strlen(char *s)
 }
 
 /**
- * puts_half - Imprime la moitié d'une chaîne de caractères, suivie d'un saut de ligne
+ * puts_half - Imprime la moitié d'une chaîne de caractères.
  * @str: La chaîne à imprimer
  */
 void puts_half(char *str)
 {
 	int len = _strlen(str);
 	int start = len / 2;
+
 	if (len % 2 == 1)
 	{
 		start = (len - 1) / 2 + 1;
