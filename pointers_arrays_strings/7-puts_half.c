@@ -1,21 +1,6 @@
 #include "main.h"
-
-/**
- * _strlen - Returns the length of a string
- * @s: the string to measure
- *
- * Return: The length of the string as an integer
- */
-int _strlen(char *s)
-{
-	int len = 0;
-
-	while (s[len] != '\0')
-	{
-		len++;
-	}
-	return (len);
-}
+#include <stdio.h>
+#include <string.h>
 
 /**
  * puts_half - Imprime la moitié d'une chaîne de caractères.
