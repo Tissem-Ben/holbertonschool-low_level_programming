@@ -9,8 +9,8 @@
  */
 int _atoi(char *s)
 {
-	int resultat = 0;
 	int signe = 1;
+	int resultat = 0;
 	int prev_result;
 
 	if (s == NULL)
