@@ -14,7 +14,7 @@ int _atoi(char *s)
 	int prev_result;
 
 	if (s == NULL)
-		return 0;
+		return (0);
 
 	while (*s && (*s < '0' || *s > '9'))
 	{
@@ -30,11 +30,11 @@ int _atoi(char *s)
 		if ((resultat / 10) != prev_result)
 		{
 			if (signe == 1)
-				return INT_MAX;
+				return (INT_MAX);
 			else
-				return INT_MIN;
+				return (INT_MIN);
 		}
 		s++;
 	}
-	return resultat;
+	return (resultat);
 }
