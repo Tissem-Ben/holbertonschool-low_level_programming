@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
- * simple_print_buffer - Affiche un tampon mémoire en hexadécimal.
- * @buffer: l'adresse de la mémoire à afficher
- * @size: la taille de la mémoire à afficher
+ * _memcpy - Copies memory area
+ * @dest: Destination memory area
+ * @src: Source memory area
+ * @n: Number of bytes to copy
  *
- * Return: Rien.
+ * Return: A pointer to the destination memory area
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
