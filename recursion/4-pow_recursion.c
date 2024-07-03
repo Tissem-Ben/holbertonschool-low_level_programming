@@ -5,7 +5,7 @@
  * @x: input value
  * @y: input power
  *
- * return: the function should return -1 if y is lower than 0
+ * Return: the function should return -1 if y is lower than 0
  */
 int _pow_recursion(int x, int y)
 {
