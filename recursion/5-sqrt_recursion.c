@@ -1,59 +1,32 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion - returns the natural square root of a number.
- * @n: the number for which to find the square root
- *
- * Return: return -1 If n does not have a natural square root
+ * _sqrt_helper - Fonction
+ * @x: Le nombre.
+ * @i: Le diviseur courant.
+ * Return 0
  */
-int _sqrt_recursion(int x, int i)
+int _sqrt_helper(int x, int i)
 {
-	int square;
-
-	square = i * i;
-	if (square >= x)
-	{
+	if (i * i > x)
+		return (-1);
+	if (i * i == x)
 		return (i);
-	}
-	else
-	{
-		return (_sqrt(x, i + 1));
-	}
+	return (_sqrt_helpe (x, i + 1));
 }
+
 /**
- * hai - helper function, recursive steps taken
- * @n: number given to original function is_prime_number
- * @d: incrementer divisor
- * Return: 0 if not prime, 1 if prime
+ * _sqrt_recursion
+ * @n: Le nombre.
+ *
+ * Return: La racine 
  */
-int hai(int n, int d)
+int _sqrt_recursion(int n)
 {
-	if (n % d == 0)
-	{
-		return (0);
-	}
-	else if (_sqrt(n, 1) < d)
-	{
-		return (1);
-	}
-	else
-	{
-		return (hai(n, d + 1));
-	}
-}
-/**
- * is_prime_number - determine if a number is a prime number
- * @n: int number
- * Return: 1 if prime, 0 otherwise
- */
-int is_prime_number(int n)
-{
-	if (n <= 1)
-	{
-		return (0);
-	}
-	else
-	{
-		return (hai(n, 2));
-	}
+	if (n < 0)
+		return (-1);
+	if (n == 0 || n == 1)
+		return (n);
+
+	return (_sqrt_helper(n, 1));
 }
