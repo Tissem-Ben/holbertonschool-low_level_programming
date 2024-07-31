@@ -14,7 +14,7 @@ unsigned int _strlen(const char *s)
 	while (s[length] != '\0')
 		length++;
 
-	return length;
+	return (length);
 }
 
 /**
@@ -29,7 +29,7 @@ char *_strdup(const char *str)
 	unsigned int len, i;
 
 	if (str == NULL)
-		return NULL;
+		return (NULL);
 
 	len = 0;
 	while (str[len] != '\0')
@@ -37,13 +37,13 @@ char *_strdup(const char *str)
 
 	dup = malloc(len + 1);
 	if (dup == NULL)
-		return NULL;
+		return (NULL);
 
 	for (i = 0; i < len; i++)
 		dup[i] = str[i];
 	dup[len] = '\0';
 
-	return dup;
+	return (dup);
 }
 
 /**
