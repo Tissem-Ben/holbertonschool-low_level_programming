@@ -1,7 +1,7 @@
 #include "print_error.h"
 #include <unistd.h>
 #include <stdarg.h>
-
+#include <stdlib.h>
 /**
  * print_error - Prints an error message and exits.
  * @exit_code: Exit code to return.
